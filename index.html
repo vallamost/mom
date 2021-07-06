@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mom</title>
+    <link rel="shortcut icon" type="image/jpg" href="/img/favicon.ico" />
+    <link rel="stylesheet" href="style.min.css" />
+    <script type="text/javascript" src="parallax.min.js"></script>
+  </head>
+  <body>
+    <audio src="" id="audio"></audio>
+
+    <div id="back" class="back">
+      <img
+        src="img/stars.png"
+        alt="stars"
+        id="stars"
+        class="src"
+        data-depth="0.05"
+      />
+      <img
+        src="img/moon.png"
+        alt="moon"
+        id="moon"
+        class="src"
+        data-depth="0.4"
+      />
+
+      <img src="img/sun.png" alt="sun" id="sun" class="src" data-depth=".3" />
+
+      <img
+        src="img/mountain_back.png"
+        alt="mountain_back"
+        id="mountain_back"
+        class="src"
+        data-depth="0.08"
+      />
+
+      <img
+        src="img/birds.png"
+        alt="birds"
+        id="birds"
+        class="src"
+        data-depth="0.06"
+      />
+
+      <img
+        src="img/mountain_front.png"
+        alt="mountain_front"
+        id="mountain_front"
+        class="src"
+        data-depth="0.04"
+      />
+    </div>
+    <div id="songs-container"></div>
+    <div id="player">
+      <div style="margin: 0 auto">
+        <center style="display: flex">
+          <img
+            src="img/play_button.png"
+            id="action-player-btn"
+            onclick=" eje(currentSong);"
+            alt=""
+          />
+          <div class="player-text" id="player-song"></div>
+          <div class="player-text" style="padding: 0px 10px">-</div>
+          <div class="player-text" id="player-artist"></div>
+        </center>
+      </div>
+    </div>
+    <div id="overlay"></div>
+    <script defer type="text/javascript" src="script.min.js"></script>
+  </body>
+</html>
