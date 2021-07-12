@@ -1,3 +1,5 @@
+#!/usr/bin/python3
+
 """ Build index from directory listing
 
 make_index.py </path/to/directory> [--header <header text>]
