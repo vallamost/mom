@@ -61,19 +61,33 @@ body {
 }
 
 h4 {
-  font-size: calc(12px + 1vw);
+  font-size: calc(7px + 1vw);
   line-height: 2rem;
   margin: 16px 0;
   display: flex;
 }
+
+h5 {
+  font-size: calc(4px + 1vw);
+  line-height: 2rem;
+  margin: 16px 0;
+  display: flex;
+}
+
 .player-text {
   font-size: 1.2rem;
   line-height: 1.8rem;
-  margin: 0 2px;
+  margin: 0;
   display: flex;
-  height: 60px;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.player-text p {
+
+  margin: 0;
+
+
 }
 
 .player-song {
@@ -115,7 +129,7 @@ h4 {
   width: auto !important;
   height: auto !important;
   position: absolute;
-  bottom: -50vh;
+  bottom: -40vh;
   left: -20vw;
   filter: sepia(90%) contrast(100%) saturate(900%) hue-rotate(0);
 }
@@ -163,14 +177,13 @@ h4 {
 }
 #player {
   position: fixed;
-  bottom: 0;
-  left: 10%;
-  width: 80%;
-  height: 50px;
+  bottom: 1%;
+  right: 10%;
+  width: 30%;
   display: flex;
   background-color: rgb(0, 0, 0, 0.7);
-  border-radius: 15px 15px 0 0;
-  padding: 10px 4vw 10px 4vw;
+  border-radius: 15px;
+  padding: 2%;
   z-index: 500;
   color: #fff;
   backdrop-filter: blur(20px);
@@ -291,6 +304,7 @@ h4 {
 }
 #songs-container {
   position: absolute;
+  margin-top: 70%;
 }
 .img-container {
   position: relative;
@@ -434,6 +448,6 @@ audio {
 }
 @media (min-width: 1201px) {
   h4 {
-    font-size: 40px;
+    font-size: 20px;
   }
 }
